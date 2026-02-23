@@ -1,0 +1,58 @@
+import { AppNotification } from '@/src/modules/notifications/types';
+
+export const MOCK_NOTIFICATIONS: AppNotification[] = [
+  {
+    id: 'notif-001',
+    type: 'invoice_paid',
+    title: 'Invoice Paid',
+    message: 'INV-2026-0001 has been fully paid by Acme Corporation',
+    read: false,
+    relatedId: 'inv-001',
+    timestamp: '2026-02-01T14:30:00Z',
+  },
+  {
+    id: 'notif-002',
+    type: 'payment_received',
+    title: 'Payment Received',
+    message: '$8,000.00 received from Bloom & Co. for INV-2026-0005',
+    read: false,
+    relatedId: 'inv-005',
+    timestamp: '2026-01-20T16:00:00Z',
+  },
+  {
+    id: 'notif-003',
+    type: 'invoice_overdue',
+    title: 'Invoice Overdue',
+    message: 'INV-2026-0003 for Green Valley LLC is now overdue',
+    read: true,
+    relatedId: 'inv-003',
+    timestamp: '2026-01-02T00:00:00Z',
+  },
+  {
+    id: 'notif-004',
+    type: 'estimate_accepted',
+    title: 'Estimate Accepted',
+    message: 'EST-2026-0002 has been accepted by Bloom & Co.',
+    read: true,
+    relatedId: 'est-002',
+    timestamp: '2026-01-08T11:00:00Z',
+  },
+  {
+    id: 'notif-005',
+    type: 'invoice_viewed',
+    title: 'Invoice Viewed',
+    message: 'INV-2026-0002 was viewed by TechStart Inc.',
+    read: true,
+    relatedId: 'inv-002',
+    timestamp: '2026-01-29T09:15:00Z',
+  },
+  {
+    id: 'notif-006',
+    type: 'reminder',
+    title: 'Payment Reminder',
+    message: 'INV-2026-0005 balance of $9,445.00 is due in 2 days',
+    read: false,
+    relatedId: 'inv-005',
+    timestamp: '2026-02-08T08:00:00Z',
+  },
+];
